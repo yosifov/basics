@@ -1,0 +1,11 @@
+C:\Users\Yosifov\source\repos\SoftUni\ProgrammingBasics\bin\Debug\netcoreapp2.2\ProgrammingBasics.deps.json
+C:\Users\Yosifov\source\repos\SoftUni\ProgrammingBasics\bin\Debug\netcoreapp2.2\ProgrammingBasics.runtimeconfig.json
+C:\Users\Yosifov\source\repos\SoftUni\ProgrammingBasics\bin\Debug\netcoreapp2.2\ProgrammingBasics.runtimeconfig.dev.json
+C:\Users\Yosifov\source\repos\SoftUni\ProgrammingBasics\bin\Debug\netcoreapp2.2\ProgrammingBasics.dll
+C:\Users\Yosifov\source\repos\SoftUni\ProgrammingBasics\bin\Debug\netcoreapp2.2\ProgrammingBasics.pdb
+C:\Users\Yosifov\source\repos\SoftUni\ProgrammingBasics\obj\Debug\netcoreapp2.2\ProgrammingBasics.csprojAssemblyReference.cache
+C:\Users\Yosifov\source\repos\SoftUni\ProgrammingBasics\obj\Debug\netcoreapp2.2\ProgrammingBasics.csproj.CoreCompileInputs.cache
+C:\Users\Yosifov\source\repos\SoftUni\ProgrammingBasics\obj\Debug\netcoreapp2.2\ProgrammingBasics.AssemblyInfoInputs.cache
+C:\Users\Yosifov\source\repos\SoftUni\ProgrammingBasics\obj\Debug\netcoreapp2.2\ProgrammingBasics.AssemblyInfo.cs
+C:\Users\Yosifov\source\repos\SoftUni\ProgrammingBasics\obj\Debug\netcoreapp2.2\ProgrammingBasics.dll
+C:\Users\Yosifov\source\repos\SoftUni\ProgrammingBasics\obj\Debug\netcoreapp2.2\ProgrammingBasics.pdb
