@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ProgrammingBasics
+﻿namespace ProgrammingBasics
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     class SimpleOperationsAndCalculationsExercise
     {
         public static void Tasks()

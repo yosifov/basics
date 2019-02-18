@@ -1,14 +1,17 @@
-﻿using System;
-
-namespace ProgrammingBasics
+﻿namespace ProgrammingBasics
 {
+    using System;
+
     class Program
     {
         static void Main(string[] args)
         {
-            //FirstSpetsInCoding.Tasks();
+            //FirstStepsInCoding.Tasks();
             //SimpleOperationsAndCalculationsLab.Tasks();
-            SimpleOperationsAndCalculationsExercise.Tasks();
+            //SimpleOperationsAndCalculationsExercise.Tasks();
+            ConditionalStatementsLab.Tasks();
+            //ConditionalStatementsExercise.Tasks();
+            //Console.WriteLine("Programming Basics");
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿using System;
-
-namespace ProgrammingBasics
+﻿namespace ProgrammingBasics
 {
-    class FirstSpetsInCoding
+    using System;
+
+    class FirstStepsInCoding
     {
         public static void Tasks()
         {
