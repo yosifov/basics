@@ -9,8 +9,8 @@
             //FirstStepsInCoding.Tasks();
             //SimpleOperationsAndCalculationsLab.Tasks();
             //SimpleOperationsAndCalculationsExercise.Tasks();
-            ConditionalStatementsLab.Tasks();
-            //ConditionalStatementsExercise.Tasks();
+            //ConditionalStatementsLab.Tasks();
+            ConditionalStatementsExercise.Tasks();
             //Console.WriteLine("Programming Basics");
         }
     }
