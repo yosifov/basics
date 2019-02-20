@@ -12,7 +12,8 @@
             //P02BonusScore();
             //P03SpeedInfo();
             //P04MetricConverter();
-            P05TimePlus15Minutes();
+            //P05TimePlus15Minutes();
+            //P06ThreeBrothers();
         }
 
         private static void P01SumSeconds()
@@ -123,7 +124,40 @@
 
         private static void P05TimePlus15Minutes()
         {
+            int hours = int.Parse(Console.ReadLine());
+            int minutes = int.Parse(Console.ReadLine());
+            int newMinutes = minutes + 15;
+            int newHours = hours;
+            if (newMinutes > 59)
+            {
+                newMinutes -= 60;
+                newHours += 1;
+                if (newHours > 23)
+                {
+                    newHours = 24 - newHours;
+                }
+            }
+            Console.WriteLine($"{newHours}:{newMinutes:D2}");
+        }
 
+        private static void P06ThreeBrothers()
+        {
+            double firstTime = double.Parse(Console.ReadLine());
+            double secondTime = double.Parse(Console.ReadLine());
+            double thirdTime = double.Parse(Console.ReadLine());
+            double dadTime = double.Parse(Console.ReadLine());
+            double totalTime = 1 / (1 / firstTime + 1 / secondTime + 1 / thirdTime);
+            double totalTimeWithRest = totalTime + (totalTime * 0.15);
+            double leftTime = dadTime - totalTimeWithRest;
+            Console.WriteLine($"Cleaning time: {totalTimeWithRest:F2}");
+            if (leftTime >= 0)
+            {
+                Console.WriteLine($"Yes, there is a surprise - time left -> {Math.Floor(leftTime):F0} hours.");
+            }
+            else
+            {
+                Console.WriteLine($"No, there isn't a surprise - shortage of time -> {Math.Ceiling(Math.Abs(leftTime)):F0} hours.");
+            }
         }
     }
 }
