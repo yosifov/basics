@@ -14,6 +14,9 @@
             //P04MetricConverter();
             //P05TimePlus15Minutes();
             //P06ThreeBrothers();
+            //P07Choreography();
+            //P08WorldSwimmingRecord();
+            P09Scholarship();
         }
 
         private static void P01SumSeconds()
@@ -157,6 +160,80 @@
             else
             {
                 Console.WriteLine($"No, there isn't a surprise - shortage of time -> {Math.Ceiling(Math.Abs(leftTime)):F0} hours.");
+            }
+        }
+
+        private static void P07Choreography()
+        {
+            int numSteps = int.Parse(Console.ReadLine());
+            int numDancers = int.Parse(Console.ReadLine());
+            int daysLearning = int.Parse(Console.ReadLine());
+            double stepsPerDay = numSteps / daysLearning;
+            double percentStepsPerDay = Math.Ceiling((stepsPerDay / numSteps) * 100);
+            if (percentStepsPerDay < 15)
+            {
+                Console.WriteLine($"Yes, they will succeed in that goal! {(percentStepsPerDay / numDancers):F2}%.");
+            }
+            else
+            {
+                Console.WriteLine($"No, they will not succeed in that goal! Required {(percentStepsPerDay / numDancers):F2}% steps to be learned per day.");
+            }
+        }
+
+        private static void P08WorldSwimmingRecord()
+        {
+            double worldRecord = double.Parse(Console.ReadLine());
+            double distance = double.Parse(Console.ReadLine());
+            double timeForOneMeter = double.Parse(Console.ReadLine());
+            double resistence = Math.Floor((distance / 15)) * 12.5;
+            double totalTime = (distance * timeForOneMeter) + resistence;
+            if (totalTime < worldRecord)
+            {
+                Console.WriteLine($"Yes, he succeeded! The new world record is {totalTime:F2} seconds.");
+            }
+            else
+            {
+                Console.WriteLine($"No, he failed! He was {totalTime - worldRecord:F2} seconds slower.");
+            }
+        }
+
+        private static void P09Scholarship()
+        {
+            double income = double.Parse(Console.ReadLine());
+            double grade = double.Parse(Console.ReadLine());
+            double minSalary = double.Parse(Console.ReadLine());
+            double socialScholarship = Math.Floor(minSalary * 0.35);
+            double gradeScholarship = Math.Floor(grade * 25);
+
+            if (income <= minSalary)
+            {
+                if (grade >= 5.5)
+                {
+                    if (gradeScholarship >= socialScholarship)
+                    {
+                        Console.WriteLine($"You get a scholarship for excellent results {gradeScholarship} BGN");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"You get a Social scholarship {socialScholarship} BGN");
+                    }
+                }
+                else if (grade > 4.5)
+                {
+                    Console.WriteLine($"You get a Social scholarship {socialScholarship} BGN");
+                }
+                else
+                {
+                    Console.WriteLine("You cannot get a scholarship!");
+                }
+            }
+            else if (grade >= 5.5)
+            {
+                Console.WriteLine($"You get a scholarship for excellent results {gradeScholarship} BGN");
+            }
+            else
+            {
+                Console.WriteLine("You cannot get a scholarship!");
             }
         }
     }

@@ -10,8 +10,8 @@
             //SimpleOperationsAndCalculationsLab.Tasks();
             //SimpleOperationsAndCalculationsExercise.Tasks();
             //ConditionalStatementsLab.Tasks();
-            ConditionalStatementsExercise.Tasks();
-            //Console.WriteLine("Programming Basics");
+            //ConditionalStatementsExercise.Tasks();
+            NestedConditionalStatementsLab.Tasks();
         }
     }
 }
