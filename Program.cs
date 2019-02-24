@@ -11,7 +11,8 @@
             //SimpleOperationsAndCalculationsExercise.Tasks();
             //ConditionalStatementsLab.Tasks();
             //ConditionalStatementsExercise.Tasks();
-            NestedConditionalStatementsLab.Tasks();
+            //NestedConditionalStatementsLab.Tasks();
+            NestedConditionalStatementsExercise.Tasks();
         }
     }
 }
