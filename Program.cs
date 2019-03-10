@@ -12,7 +12,8 @@
             //ConditionalStatementsLab.Tasks();
             //ConditionalStatementsExercise.Tasks();
             //NestedConditionalStatementsLab.Tasks();
-            NestedConditionalStatementsExercise.Tasks();
+            //NestedConditionalStatementsExercise.Tasks();
+            WhileLoopLab.Tasks();
         }
     }
 }
