@@ -10,7 +10,9 @@ namespace ProgrammingBasics
         {
             //P01OldBooks();
             //P02ExamPreparation();
-            P03Vacation();
+            //P03Vacation();
+            //P04Coins();
+            P05Cake();
         }
 
         private static void P01OldBooks()
@@ -63,7 +65,7 @@ namespace ProgrammingBasics
                     problems++;
                     taskName = Console.ReadLine();
                 }
-                
+
             }
             if (counter < badEvaluations)
             {
@@ -75,12 +77,122 @@ namespace ProgrammingBasics
             {
                 Console.WriteLine($"You need a break, {counter} poor grades.");
             }
-            
+
         }
 
         private static void P03Vacation()
         {
+            double neededMoney = double.Parse(Console.ReadLine());
+            double availableMoney = double.Parse(Console.ReadLine());
+            
+            int spendCounter = 0;
+            int days = 0;
+            while (availableMoney < neededMoney && spendCounter < 5)
+            {
+                string action = Console.ReadLine();
+                double amount = double.Parse(Console.ReadLine());
 
+                switch (action)
+                {
+                    case "spend":
+                        availableMoney -= amount;
+                        spendCounter++;
+                        break;
+                    case "save":
+                        availableMoney += amount;
+                        spendCounter = 0;
+                        break;
+                    default:
+                        break;
+                }
+                if (availableMoney < 0)
+                {
+                    availableMoney = 0;
+                }
+                days++;
+            }
+            if (spendCounter == 5)
+            {
+                Console.WriteLine("You can't save the money.");
+                Console.WriteLine(days);
+            }
+            if (availableMoney >= neededMoney)
+            {
+                Console.WriteLine($"You saved the money for {days} days.");
+            }
+        }
+
+        private static void P04Coins()
+        {
+            decimal change = decimal.Parse(Console.ReadLine());
+            int counter = 0;
+            while (change > 0)
+            {
+                if (change >= 2m)
+                {
+                    change -= 2.0m;
+                    counter++;
+                }
+                else if (change >= 1m)
+                {
+                    change -= 1.0m;
+                    counter++;
+                }
+                else if (change >= 0.5m)
+                {
+                    change -= 0.5m;
+                    counter++;
+                }
+                else if (change >= 0.2m)
+                {
+                    change -= 0.2m;
+                    counter++;
+                }
+                else if (change >= 0.1m)
+                {
+                    change -= 0.1m;
+                    counter++;
+                }
+                else if (change >= 0.05m)
+                {
+                    change -= 0.05m;
+                    counter++;
+                }
+                else if (change >= 0.02m)
+                {
+                    change -= 0.02m;
+                    counter++;
+                }
+                else if (change >= 0.01m)
+                {
+                    change -= 0.01m;
+                    counter++;
+                }
+            }
+            Console.WriteLine(counter);
+        }
+
+        private static void P05Cake()
+        {
+            int width = int.Parse(Console.ReadLine());
+            int length = int.Parse(Console.ReadLine());
+            int cakeArea = width * length;
+            int counter = 0;
+            while (cakeArea >= 0)
+            {
+                string input = Console.ReadLine();
+                if (input == "STOP")
+                {
+                    Console.WriteLine($"{cakeArea} pieces are left.");
+                    break;
+                }
+                cakeArea -= int.Parse(input);
+                counter++;
+            }
+            if (cakeArea < 0)
+            {
+                Console.WriteLine($"No more cake left! You need {Math.Abs(cakeArea)} pieces more.");
+            }
         }
     }
 }
