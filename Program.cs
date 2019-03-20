@@ -15,7 +15,8 @@
             //NestedConditionalStatementsExercise.Tasks();
             //WhileLoopLab.Tasks();
             //WhileLoopExercise.Tasks();
-            ForLoopLab.Tasks();
+            //ForLoopLab.Tasks();
+            ForLoopExercise.Tasks();
         }
     }
 }
