@@ -16,7 +16,8 @@
             //WhileLoopLab.Tasks();
             //WhileLoopExercise.Tasks();
             //ForLoopLab.Tasks();
-            ForLoopExercise.Tasks();
+            //ForLoopExercise.Tasks();
+            NestedLoopsLab.Tasks();
         }
     }
 }
