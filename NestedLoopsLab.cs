@@ -14,7 +14,8 @@
             //P04Combination();
             //P05Building();
             //P06Travelling();
-            P07NameWars();
+            //P07NameWars();
+            P08CookieFactory();
         }
 
         private static void P01NumbersFromNToOne()
@@ -105,7 +106,7 @@
         {
             string destination = Console.ReadLine();
             double currentBudget = 0;
-            while(destination != "End")
+            while (destination != "End")
             {
                 double minBudget = double.Parse(Console.ReadLine());
                 while (currentBudget < minBudget)
@@ -139,6 +140,48 @@
                 name = Console.ReadLine();
             }
             Console.WriteLine($"Winner is {winner} - {maxSum}!");
+        }
+
+        private static void P08CookieFactory()
+        {
+            int numBatches = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= numBatches; i++)
+            {
+                bool containsFlour = false;
+                bool containsEggs = false;
+                bool containsSugar = false;
+                string ingredient = Console.ReadLine();
+                while (!(containsFlour && containsEggs && containsSugar))
+                {
+                    if (ingredient == "flour")
+                    {
+                        containsFlour = true;
+                    }
+                    else if (ingredient == "eggs")
+                    {
+                        containsEggs = true;
+                    }
+                    else if (ingredient == "sugar")
+                    {
+                        containsSugar = true;
+                    }
+                    else if (ingredient == "Bake!")
+                    {
+                        if (containsFlour && containsEggs && containsSugar)
+                        {
+                            Console.WriteLine($"Baking batch number {i}...");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("The batter should contain flour, eggs and sugar!");
+                        }
+                    }
+                    ingredient = Console.ReadLine();
+                }
+                Console.WriteLine($"Baking batch number {i}...");
+            }
+            // TODO
         }
     }
 }

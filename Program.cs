@@ -1,7 +1,5 @@
 ﻿namespace ProgrammingBasics
 {
-    using System;
-
     class Program
     {
         static void Main(string[] args)
@@ -17,7 +15,8 @@
             //WhileLoopExercise.Tasks();
             //ForLoopLab.Tasks();
             //ForLoopExercise.Tasks();
-            NestedLoopsLab.Tasks();
+            //NestedLoopsLab.Tasks();
+            NestedLoopsExercise.Tasks();
         }
     }
 }
